@@ -44,14 +44,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Calorie Counter App</h1>
+      <h1> The Calorie Counter </h1>
+      <Budget items={items} />
       <IngredientSearch
         items={items}
         setItems={setItems}
         handleClick={handleClick}
         setValue={setValue}
       />
-      <Budget items={items} />
+      
       <List
         items={items}
         handleClick={handleClick}

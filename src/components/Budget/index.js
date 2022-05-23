@@ -7,7 +7,8 @@ function Budget({ items }) {
 
   return (
     <div>
-      <h1>You have {' ' + 3000 - caloriesConsumed + ' '} Calories Remaining</h1>
+      <h3> {' ' + 3000 - caloriesConsumed + ' '} Calories Remaining Today</h3>
+      <h2>What shall you eat next?</h2>
     </div>
   );
 }

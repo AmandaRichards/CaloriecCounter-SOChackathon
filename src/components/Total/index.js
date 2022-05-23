@@ -1,3 +1,5 @@
+import styled from "styled-components"
+
 function Total({ items }) {
   function reduceFunction(cur, acc) {
     return cur + acc.itemTotal;
@@ -7,13 +9,16 @@ function Total({ items }) {
 
   return (
     <div>
-      <h1>
+      <StyledTotal>
         You have consumed
         {' ' + caloriesConsumed + ' '}
         calories today
-      </h1>
+      </StyledTotal>
     </div>
   );
 }
 
 export default Total;
+
+const StyledTotal= styled.h3 `
+color: red`

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 function List({ items, handleChange, handleClick }) {
   return (
-    <main>
+    <StyledMain>
       {items.map((item, index) => {
         return (
           <section key={index}>
@@ -19,7 +19,7 @@ function List({ items, handleChange, handleClick }) {
           </section>
         );
       })}
-    </main>
+    </StyledMain>
   );
 }
 
@@ -27,3 +27,9 @@ export default List;
 
 const StyledHeading = styled.h2`
 color: #e76f51`
+
+const StyledMain = styled.main`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+`
